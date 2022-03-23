@@ -14,6 +14,7 @@ box2.addEventListener(
 		// tylko dla pojedynczego palca
 		if (event.targetTouches.length == 1) {
 			var touch = event.targetTouches[0];
+			console.log(event);
 
 			// ustawiamy odpowiednie style
 			if (touch.pageX > borderLeft && touch.pageX < borderRight) {
